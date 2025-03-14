@@ -170,9 +170,8 @@ h1, h2 {
 
 footer {
     margin-top: 40px;
-    background-color: #1b263b;
     height: 77px;
-    color: #ffffff;
+    color: black;
     text-align: center;
 } 
 .content p {
