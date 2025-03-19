@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    background-color: #faedcd;
+}
+
+.clg-logo {
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#img-cg {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 90px;
+}
+
+.clg-name {
+    text-align: center;
+    margin-left: 70px;
+    font-size: 10px;
+}
+
+#govt {
+    font-weight: bold;
+    font-size: large;
+}
+
+#name {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.options {
+    display: flex;
+    gap: 25px;
+    margin-left: 177px;
+    align-items: end;
+}
+
+.dropdown-btn {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.dd-option {
+    display: none; /* Hide dropdown by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.dropdown-btn:hover .dd-option {
+    display: flex; /* Show dropdown on hover */
+}
+
+.dropbtn {
+    padding: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #fffffe;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #ff7300;
+}
+
+.dd-option a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+.dd-option a:hover {
+    background-color: #ff7300;
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    font-size: small;
+}
+
+
+/* Carousel Styles */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 450px; /* Set a fixed height for the carousel */
+    z-index: 1;
+    margin-bottom: 7px;
+    border-radius: 17px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Ensure inner container takes full height */
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Center images vertically */
+    justify-content: center; /* Center images horizontally */
+    height: 100%; /* Ensure each slide takes full height */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow-clip-margin: content-box;
+    /* overflow: clip; Ensure images cover the entire slide without distortion */
+}
+
+/* Container Styling */
+.welcome, .mission, .vision {
+    background-color: #e0e5d2;
+    /* margin: 17px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    height: 20vh;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px;
+}
+.welcome {
+    margin-top: 7px;
+}
+/* Heading Styling */
+h1, h2 {
+    color: #f47302;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Hover Effects */
+.welcome:hover, .mission:hover, .vision:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    display: flex;
+    /* height: 70vh; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer {
+    margin-top: 40px;
+    /* background-color: #1b263b; */
+    height: 77px;
+    color: #000000;
+    text-align: center;
+} 
+.content p {
+    font-size: medium;
+}
